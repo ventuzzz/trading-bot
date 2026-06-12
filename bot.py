@@ -2,7 +2,8 @@ import discord
 from discord.ext import commands, tasks
 from datetime import datetime
 
-TOKEN = "MTUxNDk0ODM3NDAxNTc3NDc2MQ.Gxu8S4.FL8PlDfY7PC7xKHCg-tbceuXN5LvXSaxU-ZIC4"
+import os
+TOKEN = os.environ.get("DISCORD_KEY")
 CHANNEL_ID = 1514928208049602752  # ID del canale presenze
 
 intents = discord.Intents.default()
